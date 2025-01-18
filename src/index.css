@@ -1,3 +1,35 @@
+:root {
+  /*  Font Family */
+  --font-roboto: "Roboto", serif;
+
+  /* Font Sizes  */
+  /* 16 -> 18 | 20 -> 24 | 32 -> 36 | 40 -> 48 */
+  --fs-100: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+  --fs-200: clamp(1.25rem, 1.163rem + 0.4348vi, 1.5rem);
+  --fs-300: clamp(2rem, 1.913rem + 0.4348vw, 2.25rem);
+  --fs-400: clamp(2.5rem, 2.3261rem + 0.8696vw, 3rem);
+
+  /* Spacing */
+  /* 16 -> 18 | 20 -> 24 | 24 -> 32 | 32 -> 48 | 48 -> 80 */
+  --spacing-100: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+  --spacing-200: clamp(1.25rem, calc(1.16rem + 0.43vw), 1.5rem);
+  --spacing-300: clamp(1.5rem, 1.3261rem + 0.8696vi, 2rem);
+  --spacing-400: clamp(2rem, 1.6522rem + 1.7391vi, 3rem);
+  --spacing-500: clamp(3rem, 2.3043rem + 3.4783vi, 5rem);
+
+  /* 16 -> 18  */
+  --flow-space: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+
+  /* 16 -> 18 */
+  --gap: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+
+  /* Colors */
+  --clr-dark-blue: #1f2937;
+  --clr-grey: #e5e7eb;
+  --clr-white: #f9faf8;
+  --clr-blue: #3882f6;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -5,17 +37,21 @@
   box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
+/* 2. Remove default margin and padding */
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: "Josefin Sans", serif;
+  position: relative;
+  font-family: var(--font-roboto);
+  font-size: var(--fs-100);
   /* 3. Add accessible line-height */
   line-height: 1.5;
   /* 4. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  /*min-height: 100vh;*/
 }
 
 /* 5. Improve media defaults */
@@ -51,6 +87,7 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -67,3 +104,26 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+10. Visually Hidden Utility Class
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+
+/* Flow Utility */
+.flow > * + * {
+  margin-top: var(--flow-space);
+}
+
+

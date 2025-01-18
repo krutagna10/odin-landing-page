@@ -1,0 +1,30 @@
+.hero {
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-white);
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+
+@media (max-width: 47.99em) {
+  .hero__container {
+    flex-direction: column;
+    text-align: center;
+  } 
+
+  .hero__btn {
+    margin-inline: auto;
+  }
+}
+
+.hero__title {
+  font-size: var(--fs-400);
+}
+
+.hero__content,
+.hero__image-wrapper {
+  flex: 1;
+}

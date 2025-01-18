@@ -1,7 +1,13 @@
+import Header from "./components/Header/Header.tsx";
+import Hero from "./components/Hero/Hero.tsx";
+import Information from "./components/Information/Information.tsx";
+
 function App() {
   return (
     <div>
-      <h1>React Typescript Template</h1>
+      <Header />
+      <Hero />
+      <Information />
     </div>
   );
 }

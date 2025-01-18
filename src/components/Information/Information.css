@@ -1,0 +1,19 @@
+.information {
+  text-align: center;
+}
+
+.information__title {
+  font-size: var(--fs-300);
+}
+
+.information__content {
+  display: flex;
+  gap: var(--gap);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.information__card {
+  min-width: 16rem;
+  flex: 1;
+}
