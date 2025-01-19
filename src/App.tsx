@@ -8,7 +8,6 @@ import Testimonial from "./components/Testimonial/Testimonial.tsx";
 function App() {
   return (
     <main>
-      <h1 className="sr-only">Landing Page</h1>
       <Header />
       <Hero />
       <Information />
