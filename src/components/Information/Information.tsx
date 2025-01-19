@@ -1,9 +1,13 @@
 import Section from "../Section/Section.tsx";
 import Container from "../Container/Container.tsx";
-import { plants } from "../../data/data.ts";
+import data from "../../data/data.json";
 import "./Information.css";
 
+type PlantType = { image: string; description: string };
+
 function Information() {
+  const plants: PlantType[] = data;
+
   return (
     <Section className="information">
       <Container className="container">
@@ -11,12 +15,14 @@ function Information() {
         <div className="information__content">
           {plants.map((plant, index) => (
             <article key={index} className="information__card flow">
-              <img
-                className="information__image"
-                src={plant.image}
-                alt="plant"
-              />
-              <p className="information__description">{plant.description}</p>
+              <figure>
+                <img
+                  className="information__image"
+                  src={plant.image}
+                  alt="plant"
+                />
+                <figcaption>{plant.description}</figcaption>
+              </figure>
             </article>
           ))}
         </div>

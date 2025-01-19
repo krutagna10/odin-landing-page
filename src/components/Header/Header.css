@@ -12,7 +12,7 @@
 }
 
 .header__logo-link {
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   font-weight: 900;
   color: var(--clr-white);
   text-decoration: none;
@@ -38,14 +38,14 @@
   height: 1.5rem;
   border: 0;
   background-color: transparent;
-  background-image: url("../../assets/menu.svg");
+  background-image: url("/public/assets/menu.svg");
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
 }
 
 .header__nav-toggle-btn[aria-expanded="true"] {
-  background-image: url("../../assets/close.svg");
+  background-image: url("/public/assets/close.svg");
 }
 
 @media (max-width: 47.99em) {

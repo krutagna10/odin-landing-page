@@ -122,6 +122,19 @@ h6 {
   border: 0 !important;
 }
 
+/* 11. Screen Reader only utility class */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+
 
 /* Flow Utility */
 .flow > * + * {

@@ -7,14 +7,15 @@ import Testimonial from "./components/Testimonial/Testimonial.tsx";
 
 function App() {
   return (
-    <div>
+    <main>
+      <h1 className="sr-only">Landing Page</h1>
       <Header />
       <Hero />
       <Information />
       <Testimonial />
       <CallToAction />
       <Footer />
-    </div>
+    </main>
   );
 }
 

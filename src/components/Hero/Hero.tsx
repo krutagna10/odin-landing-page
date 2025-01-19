@@ -8,7 +8,7 @@ function Hero() {
     <Section className="hero">
       <Container className="hero__container">
         <div className="hero__content flow">
-          <h1 className="hero__title">This website is awesome</h1>
+          <h2 className="hero__title">This website is awesome</h2>
           <p>
             This website has some subtext that goes under the main title. It's a
             smaller font and color is lower contrast.
