@@ -1,7 +1,7 @@
 import Section from "../Section/Section.tsx";
 import Container from "../Container/Container.tsx";
-import "./CallToAction.css";
 import Button from "../Button/Button.tsx";
+import "./CallToAction.css";
 
 function CallToAction() {
   return (

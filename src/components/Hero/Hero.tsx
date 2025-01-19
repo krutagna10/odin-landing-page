@@ -1,7 +1,6 @@
 import Section from "../Section/Section.tsx";
 import Container from "../Container/Container.tsx";
 import Button from "../Button/Button.tsx";
-import heroImage from "../../assets/hero.avif";
 import "./Hero.css";
 
 function Hero() {
