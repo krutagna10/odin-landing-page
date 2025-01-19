@@ -7,13 +7,23 @@
 }
 
 .information__content {
-  display: flex;
+  display: grid;
   gap: var(--gap);
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .information__card {
   min-width: 16rem;
-  flex: 1;
+}
+
+
+@media (min-width: 40em) {
+  .information__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .information__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

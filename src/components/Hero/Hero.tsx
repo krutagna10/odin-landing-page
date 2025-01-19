@@ -14,10 +14,10 @@ function Hero() {
             This website has some subtext that goes under the main title. It's a
             smaller font and color is lower contrast.
           </p>
-          <Button className="hero__btn">Sign up</Button>
+          <Button className="hero__btn btn--blue">Sign up</Button>
         </div>
         <div className="hero__image-wrapper">
-          <img src={heroImage} alt="A plant" />
+          <img src="./assets/hero.avif" alt="A plant" />
         </div>
       </Container>
     </Section>

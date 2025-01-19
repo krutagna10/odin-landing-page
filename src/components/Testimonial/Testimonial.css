@@ -1,0 +1,21 @@
+.testimonial {
+  background-color: var(--clr-grey);
+}
+
+.testimonial__description {
+  font-size: var(--fs-300);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--clr-dark-blue);
+}
+
+.testimonial__footer {
+  text-align: right;
+}
+
+.testimonial__author {
+  text-align: left;
+  font-size: var(--fs-200);
+  font-weight: 700;
+}
+

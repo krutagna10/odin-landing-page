@@ -11,9 +11,6 @@ function Information() {
         <div className="information__content">
           {plants.map((plant, index) => (
             <article key={index} className="information__card flow">
-              <figure>
-                
-              </figure>
               <img
                 className="information__image"
                 src={plant.image}

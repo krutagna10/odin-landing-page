@@ -3,7 +3,7 @@ import "./Button.css";
 
 interface ButtonProps {
   children: React.ReactNode;
-  className?: string;
+  className: string;
 }
 
 function Button({ children, className }: ButtonProps) {

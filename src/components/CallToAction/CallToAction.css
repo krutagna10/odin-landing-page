@@ -1,0 +1,21 @@
+.cta {
+  padding-inline: var(--spacing-100);
+}
+
+.cta__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: var(--spacing-300);
+  border-radius: var(--radius-200);
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+@media (max-width: 47.99em) {
+  .cta__container {
+    flex-direction: column;
+    gap: var(--gap);
+    text-align: center;
+  }
+}

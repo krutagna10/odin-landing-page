@@ -2,9 +2,17 @@
   display: block;
   padding: 0.5rem 1.5rem;
   border: 0;
-  border-radius: 0.5rem;
-  background-color: var(--clr-blue);
+  border-radius: var(--radius-100);
   cursor: pointer;
   font-weight: 700;
+}
+
+.btn--blue {
+  background-color: var(--clr-blue);
   color: var(--clr-white);
+}
+
+.btn--white {
+  background-color: var(--clr-white);
+  color: var(--clr-blue);
 }
