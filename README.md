@@ -2,7 +2,7 @@
 
 ### Links
 
-- Live Site URL: [https://landing-page-10.vercel.app/]
+- Live Site URL: [https://odin-landing-page-10.vercel.app/]
 
 ### Built with
 
