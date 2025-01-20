@@ -1,4 +1,4 @@
-# Odin Recipes
+# Landing Page
 
 ### Links
 
