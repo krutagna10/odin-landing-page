@@ -1,4 +1,4 @@
-# Landing Page
+# Odin Landing Page
 
 ### Links
 
